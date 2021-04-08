@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
     <head>
         <meta charset="utf-8">
         <title>HTML</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     </head>
 
     <body>
@@ -16,18 +20,19 @@
                 <h2>Temperature</h2>
             </div>
 
-            <form class="w3-container">
+            <div class="w3-container">
 
                 <label>Fahrenheit</label>
-                <input class="w3-input" type="text">
+                <input class="w3-input" type="text" id="number">
 
                 <label>Celsius</label>
-                <p></p>
+                <p id="palabra"></p>
                 <br>
-                <button class="w3-button w3-green">Submit</button>
+                <button class="w3-button w3-green" id="botoncito" onclick="app.convertir()">Submit</button>
                 <br>
-            </form>
-
+            </div>
+            <script src="js/app.js"></script>
+            <script src="js/apiclient.js"></script>
         </div>
     </body>
 </html>
